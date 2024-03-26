@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:taskmanagementproject/page/Loginpage.dart';
-import 'package:taskmanagementproject/page/PrivacyPolicy.dart';
-
-import 'package:taskmanagementproject/page/feedback.dart';
-import 'package:taskmanagementproject/page/leaderboard.dart';
 
 
 
