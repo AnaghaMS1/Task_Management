@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:taskmanagementproject/page/MyProfile.dart';
 import 'package:taskmanagementproject/page/MyTask.dart';
+import 'package:taskmanagementproject/page/feedback.dart';
 import 'package:taskmanagementproject/page/leaderboard.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -36,7 +37,6 @@ class _HomeScreenState extends State<HomeScreen> {
                         "Hello,",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
-
                           fontSize: 20.0,
                           color: Colors.white,
                         ),
@@ -117,7 +117,9 @@ class _HomeScreenState extends State<HomeScreen> {
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
                         HomeCard(
-                          onPress: () {},
+                          onPress: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context)=>FeedbackPage()));
+                          },
                           icon: Icons.feedback,
                           title: 'Feedback',
                           subtitle: 'See all your feedback',

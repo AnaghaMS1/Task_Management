@@ -12,7 +12,7 @@ class _MyTaskState extends State<MyTask> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('My Task'),
+        title: Text('My Task',style: TextStyle(color: Colors.white),),
         backgroundColor:Color(0xFF186565), // Set tab bar color to green shade900
       ),
       body: DefaultTabController(

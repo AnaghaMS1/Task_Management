@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:taskmanagementproject/page/PrivacyPolicy.dart';
+import 'package:taskmanagementproject/page/Terms&conditions.dart';
+import 'package:taskmanagementproject/page/changepwd.dart';
 
 class MyProfile extends StatelessWidget {
   const MyProfile({Key? key});
@@ -15,7 +18,7 @@ class MyProfile extends StatelessWidget {
             color: Colors.white,
           ),
         ),
-        backgroundColor: Colors.green.shade900,
+        backgroundColor:Color(0xFF186565),
       ),
       body: Container(
         color: Colors.white,
@@ -65,16 +68,10 @@ class MyProfile extends StatelessWidget {
               child: Column(
                 children: [
                   CardListTile(
-                    icon: Icons.language,
-                    title: 'Account Settings',
-                    onTap: () {
-                      // Handle language setup
-                    },
-                  ),
-                  CardListTile(
                     icon: Icons.lock,
                     title: 'Change Password',
                     onTap: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=>ChangePwd()));
                       // Handle password change
                     },
                   ),
@@ -82,6 +79,7 @@ class MyProfile extends StatelessWidget {
                     icon: Icons.privacy_tip,
                     title: 'Privacy Policy',
                     onTap: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=>PrivacyPolicyPage()));
                       // Handle privacy policy
                     },
                   ),
@@ -89,6 +87,7 @@ class MyProfile extends StatelessWidget {
                     icon: Icons.description,
                     title: 'Terms and Conditions  ',
                     onTap: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=>TermsConditionsPage()));
                       // Handle terms and conditions
                     },
                   ),

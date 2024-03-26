@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:taskmanagementproject/page/Loginpage.dart';
+import 'package:taskmanagementproject/page/PrivacyPolicy.dart';
+
+import 'package:taskmanagementproject/page/feedback.dart';
+import 'package:taskmanagementproject/page/leaderboard.dart';
 
 
 
@@ -18,9 +22,11 @@ class MyApp extends StatelessWidget {
       title: 'Task Management',
       theme: ThemeData.light().copyWith(
           scaffoldBackgroundColor:Color(0xFF186565),
-          primaryColor: Colors.green.shade900
+          primaryColor:Color(0xFF186565),
       ),
-      home: LoginPage(),
+      home: LoginPage()
+
+
 
 
     );
