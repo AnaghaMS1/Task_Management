@@ -43,7 +43,7 @@ class MyProfile extends StatelessWidget {
                     maxRadius: 40.0,
                     minRadius: 40.0,
                     backgroundColor: Colors.white,
-                    //backgroundImage: ,
+                    backgroundImage: AssetImage('assets/a.png'),
                   ),
                   SizedBox(width: 10),
                   Column(
@@ -51,14 +51,19 @@ class MyProfile extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        "Anagha M S",
+                        "Emily Johnson",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 20.0,
                           color: Colors.white,
                         ),
                       ),
-                      Text("XXXXXXXXX"),
+                      Text("Senior Architect",style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 15.0,
+                        color: Colors.white,
+                      ),),
+                      Text("emily.johnson@constructionco.com"),
                     ],
                   )
                 ],

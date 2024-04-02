@@ -43,18 +43,18 @@ class _LeaderboardState extends State<Leaderboard> {
               child:  Stack(
                 children: [
                   Positioned(
-                    top:8,
-                    right:150,
+                    top:3,
+                    right:400,
                     child: _buildUserPosition(1),
                   ),
                   Positioned(
-                    top: 20,
-                    right: 300,
+                    top: 12,
+                    left: 300,
                     child: _buildUserPosition(2),
                   ),
                   Positioned(
-                    top: 20,
-                    left: 300,
+                    top: 12,
+                    right: 200,
                     child: _buildUserPosition(3),
                   ),
                 ],
@@ -153,7 +153,7 @@ class _LeaderboardState extends State<Leaderboard> {
             ),
           ),
           CircleAvatar(
-            radius: 25,
+            radius: 30,
             backgroundImage: AssetImage(user.image),
           ),
           Text(
@@ -215,11 +215,14 @@ class UserItem {
 }
 
 final List<UserItem> userItems = [
-  UserItem(rank: "1", image: "Images/g.jpeg", name: "Johnny Rios", point: "23131"),
-  UserItem(rank: "2", image: "Images/k.jpeg", name: "Hodges", point: "12323"),
-  UserItem(rank: "3", image: "Images/j.jpeg", name: "loram", point: "6343"),
-  UserItem(rank: "4", image: "Images/j.jpeg", name: "anagha", point: "6343"),
-  UserItem(rank: "5", image: "Images/j.jpeg", name: "Aparna", point: "6343"),
-  UserItem(rank: "6", image: "Images/j.jpeg", name: "Mariya", point: "6343"),
-  UserItem(rank: "7", image: "Images/j.jpeg", name: "Alex", point: "6343"),
+  UserItem(rank: "1", image: "assets/i.jpeg", name: "Johnny Rios", point: "23131"),
+  UserItem(rank: "2", image: "assets/a.png", name: "Hodges", point: "12323"),
+  UserItem(rank: "3", image: "assets/d.png", name: "loram", point: "6343"),
+  UserItem(rank: "4", image: "assets/e.jpeg", name: "anagha", point: "6343"),
+  UserItem(rank: "5", image: "assets/i.jpeg", name: "Aparna", point: "6343"),
+  UserItem(rank: "6", image: "assets/g.jpeg", name: "Abhi", point: "6343"),
+  UserItem(rank: "7", image: "assets/a.png", name: "Rani", point: "6343"),
+  UserItem(rank: "8", image: "assets/d.png", name: "Aparna", point: "6343"),
+  UserItem(rank: "9", image: "assets/a.png", name: "Mariya", point: "6343"),
+  UserItem(rank: "10", image: "assets/a.png", name: "Alex", point: "6343"),
 ];

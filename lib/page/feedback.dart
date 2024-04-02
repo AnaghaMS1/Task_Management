@@ -15,7 +15,7 @@ class FeedbackPage extends StatelessWidget {
           FeedbackItem(
             taskId: "543210",
             taskName: "Renovate kitchen area in apartment unit 3C",
-            avatar: "https://example.com/avatar.jpg",
+            avatar: "assets/a.png",
             feedbackby: "Michael Johnson",
             department: "Renovation Team",
             feedback: "The renovation work in unit 3C has several issues. The paint job is uneven, and some tiles are not properly installed.",
@@ -23,7 +23,7 @@ class FeedbackPage extends StatelessWidget {
           FeedbackItem(
             taskId: "543211",
             taskName: "Install new flooring in living room",
-            avatar: "https://example.com/avatar.jpg",
+            avatar: "assets/d.png",
             feedbackby: "Emily Thompson",
             department: "Flooring Department",
             feedback: "The new flooring installation is incomplete. Some areas are not leveled properly.",
@@ -31,7 +31,7 @@ class FeedbackPage extends StatelessWidget {
           FeedbackItem(
             taskId: "123456",
             taskName: "Install HVAC system in building A",
-            avatar: "https://example.com/avatar.jpg",
+            avatar: "assets/e.png",
             feedbackby: "John Doe",
             department: "Engineering",
             feedback: "The HVAC system installation went smoothly. Great work by the team!",
@@ -42,7 +42,6 @@ class FeedbackPage extends StatelessWidget {
     );
   }
 }
-
 class FeedbackItem extends StatelessWidget {
   final String taskId;
   final String taskName;
@@ -90,7 +89,7 @@ class FeedbackItem extends StatelessWidget {
                 ),
                 SizedBox(width: 8.0), // Spacing between left and right sides
                 CircleAvatar(
-                  backgroundImage: NetworkImage(avatar),
+                  backgroundImage: AssetImage(avatar),
                   radius: 20, // Adjust the size as needed
                 ),
               ],
